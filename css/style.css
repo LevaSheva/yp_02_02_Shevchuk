@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16pt;
+}
+header{
+    height: auto;
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    cursor: pointer;
+    margin-top: 2%;
+    margin-left: 4%;
+    float: left;
+    width: 15%;
+}
+
+#checkbox-menu, .toggle
+{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    float: right;
+    margin-top: 2.5%;
+    width: 80%;
+
+}
+.navigation a{
+    font-size: 28px;
+    text-decoration: none;
+    color: #2e1f7c;
+}
+.navigation a:after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 0%;
+    background-color: #2e1f7c;
+    transition: .2s ease-in-out;
+}
+.navigation a:hover:after, .navigation a:focus:after {
+    width: 100%;
+}
+
+.navigation li{
+    list-style-type: none;
+    margin-left: 50px;
+}
+.navigation li:last-child{
+    margin-right: 30px;
+}
+
+.img-english{
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    
+}
+
+.info{
+    background-color: #effffd;
+    min-height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-img{
+    float: left;
+    margin-left: 6%;
+    padding-top: 3%;
+    flex: 0 0 20%;
+}
+.descrip{
+    float: right;
+    margin-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex: 0 0 60%;
+}
+.descrip li{
+    line-height: 2em;
+}
+
+
+.descrip h4{
+    color: #2e1f7c;
+    font-size: 24px;
+    text-align: center;
+}
+.hill{
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.btn{
+    display: inline-block;
+    background: #ffff00; 
+    color: #2e1f7c;    
+    padding: 1rem;
+    text-decoration: none; 
+    border-radius: 10px; 
+    margin-left: -5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.btn:hover, .btn1:hover, .sent:hover{
+    cursor: pointer;
+}
+
+.smena{
+    background-color:#d3ffe8;
+    position: relative;
+    min-height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.about-smena{
+    margin-left: 20%;
+    text-align: center;
+    width: 60%;
+    background-color:white;
+    padding-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-smena li{
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.about-smena li:last-child{
+    margin-bottom: 35px;
+}
+
+
+.uch{
+    margin-top: 45px;
+    color: #2e1f7d;
+    font-size: 24pt;
+    padding-bottom: 15pt;
+}
+.price{
+    color: red;
+    font-size: 20pt;
+}
+
+.btn1{
+    background:#00ffff;
+    margin-top: 30px;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
+    margin-bottom: 40px;
+    width: 40%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 900;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.block{
+    text-align: center;
+}
+
+.opitions{
+    text-align: center;
+    background: #effffd;
+}
+.btext{
+    color: #2e1f7c;
+    font-size: 18pt;
+    padding-top: 10px;
+}
+
+#otz{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.con{
+    text-align: center;
+    background-color: #d3ffe8;
+}
+form p{
+    margin-top: 4px;
+}
+.input-name{
+    margin-left: 8px;
+}
+.textar{
+    margin-top: -20px;
+    margin-left: 127px;
+}
+form b:last-child{
+    margin-right: 310px;
+}
+
+
+
+.sent{
+    display: inline-block;
+    background: #ffff00; 
+    color: #2e1f7c;    
+    padding: 1rem; 
+    border-radius: 10px; 
+    border: 0;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+    background: #000;
+    color: white;
+    font-size: 12px;
+    line-height: 1.8em;   
+}
+
+
+
+
+.team{
+    background: #effffd;
+}
+.team-img{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team p{
+    text-align: justify;
+    margin-left: 25%;
+    margin-right: 10%
+}
+
+.tagline{
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+.header{
+    height: 600px;
+}
+.img-english{
+    padding-top: 100px;
+}
+.toggle{
+    clear: both;
+    display: block;
+    font-size: 44pt;
+    color:#2e1f7c;
+    transition: all .2s linear;
+    float: right;
+    margin-right: 5px;
+    margin-top: -60px;
+    
+}
+.toggle:hover{
+    font-size: 46pt;
+
+}
+#checkbox-menu:checked + label .touch li{
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+}
+#checkbox-menu:checked + label .touch {
+    height: 300px;
+    text-align: center;
+    width: 100%;
+    background-color: #d3ffe8;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+    width: 80%;
+    transition: .3s linear;
+    background: white;
+}
+.navigation li{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.navigation li a{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+.navigation li:last-child{
+    margin-left: 80px;
+}
+}
+
+@media screen and (max-width: 929px){
+    .message{
+        margin: 88px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+.btn1{
+    font-size: 14pt;
+    width: 70%;
+}
+
+.blocks{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blocks{
+    margin-bottom: 20px;
+}
+.block{
+        margin-top: 30px;
+}
+.block:last-child{
+    margin-bottom: 25px;
+}
+
+footer {
+    font-size: 11px;
+}
+}
+@media screen and (max-width: 630px){
+    .message, .textar{
+        margin: 0;
+    }
+    .message{
+        text-align: center;
+    }
+}
