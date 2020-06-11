@@ -121,6 +121,13 @@ header{
     cursor: pointer;
 }
 
+.btn:hover, .sent:hover{
+    background: #FFD700;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+
 .smena{
     background-color:#d3ffe8;
     position: relative;
@@ -174,6 +181,11 @@ header{
     padding-bottom: 20px;
     padding-top: 20px;
     font-weight: 900;
+}
+
+.btn1:hover{
+    box-shadow: 5px 5px 5px 5px #333333;
+    transition: linear 1s ease;
 }
 
 .blocks{
@@ -375,7 +387,12 @@ footer{
     background-color: #d3ffe8;
     text-align: center;
 }
-
+.btextl{
+    color: #2e1f7c;
+    font-size: 18pt;
+    padding-top: 10px;
+    text-align: right;
+}
 .allsmeny{
     display: flex;
     justify-content: space-around;
@@ -395,16 +412,20 @@ footer{
 
 .camp-img{
     background-image: url('../img/camp.jpg');
-    padding-bottom: 77px;
-    margin-top: 30px;
+    padding: 30px;
 }
 
 .hiltonthis{
-    text-align: center;
+    margin: 0 auto;
 }
 
 .reviews{
     margin-top: 30px;
+}
+
+.reviews p{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .review1, .review2, .review3, .review4, .review5{
@@ -436,8 +457,7 @@ footer{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 30px 0;
-
+    padding-top: 100px;
 }
 
 .review-img1{
@@ -466,17 +486,14 @@ footer{
     height: 250px;
 }
 
-.review3 p:last-child, .review4 p:last-child{
+.review1 p:last-child, .review2 p:last-child, .review3 p:last-child, .review4 p:last-child, .review5 p:last-child{
     padding-top: 15px;
-}
-
-
-.review5 p:last-child{
     padding-bottom: 15px;
 }
 
+
 .btextotz{
-    margin-bottom: 15px;
+    padding: 15px 0;
 }
 
 .page-map{
@@ -484,6 +501,12 @@ footer{
     text-align: center;
     margin-top: 30px;
 }
+iframe{
+    width: 50%; 
+    height: 400px; 
+    border: 0; 
+}
+
 .map{
     padding: 35px;
 }
@@ -493,6 +516,31 @@ footer{
 .tim{
     margin-top: 30px;
 }
+.icons{
+    padding: 30px 0;
+}
+.icons a{
+    margin-left: 20px;
+    height: 70px;
+    background-color: white;
+    color: blue;
+}
+.icons a:last-child{
+    color: red;
+}
+.icons i:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+
+
+@media screen and (max-width: 1430px){
+    .allsmeny{
+        flex-direction: column;
+    }
+}
+
 
 
 @media screen and (max-width: 1330px){
@@ -573,6 +621,11 @@ footer{
 .navigation li:last-child{
     margin-left: 0px;
     margin-right: 0px;
+}
+}
+@media screen and (max-width: 870px) {
+iframe{
+    width: 80%; 
 }
 }
 
