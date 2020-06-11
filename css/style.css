@@ -191,7 +191,7 @@ header{
     text-align: center;
     background: #effffd;
 }
-.btext, .btext_form{
+.btext, .btext_form, .btextotz{
     color: #2e1f7c;
     font-size: 18pt;
     padding-top: 10px;
@@ -407,6 +407,10 @@ footer{
     margin-top: 30px;
 }
 
+.review1, .review2, .review3, .review4, .review5{
+    text-align: justify;
+}
+
 .review1, .review3, .review5{
     background-color: #effffd;
     text-align: center;
@@ -428,40 +432,52 @@ footer{
 }
 
 
+.review-img1, .review-img2, .review-img3, .review-img4, .review-img5{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 30px 0;
+
+}
+
 .review-img1{
     background-image: url('../img/otz.png');
+    height: 250px;
 }
+
 
 .review-img2{
     background-image: url('../img/otz2.jpg');
+    height: 250px;
 }
 
 .review-img3{
     background-image: url('../img/otz3.jpg');
+    height: 250px;
 }
 
 .review-img4{
     background-image: url('../img/otz4.jpg');
+    height: 250px;
 }
 
 .review-img5{
     background-image: url('../img/otz5.jpg');
+    height: 250px;
+}
+
+.review3 p:last-child, .review4 p:last-child{
+    padding-top: 15px;
 }
 
 
+.review5 p:last-child{
+    padding-bottom: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.btextotz{
+    margin-bottom: 15px;
+}
 
 .page-map{
     background-color: #effffd;
