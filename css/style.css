@@ -51,17 +51,20 @@ header{
     list-style-type: none;
     margin-left: 50px;
 }
-.navigation li:last-child{
+ .navigation li:last-child{
     margin-right: 30px;
-}
+} 
 
 .img-english{
     text-align: center;
     max-width: 100%;
-    height: auto;
+    min-height: 486px;
     padding-bottom: 20px;
-    margin-top: 30px;
-    
+    margin: 30px 0;
+    background-image: url('../img/english.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 .info{
@@ -113,6 +116,7 @@ header{
     font-weight: bold;
 }
 
+
 .btn:hover, .btn1:hover, .sent:hover{
     cursor: pointer;
 }
@@ -138,7 +142,7 @@ header{
 
 .about-smena li{
     list-style-type: none;
-    padding-top: 20px;
+    padding: 20px 10px 0px 10px;
 }
 
 .about-smena li:last-child{
@@ -183,14 +187,15 @@ header{
     text-align: center;
 }
 
-.opitions{
+.reviews{
     text-align: center;
     background: #effffd;
 }
-.btext{
+.btext, .btext_form{
     color: #2e1f7c;
     font-size: 18pt;
     padding-top: 10px;
+    text-align: center;
 }
 
 #otz{
@@ -200,20 +205,7 @@ header{
 .con{
     text-align: center;
     background-color: #d3ffe8;
-}
-form p{
-    margin-top: 4px;
-}
-.input-name{
-    margin-left: 8px;
-}
-.textar{
-    margin-top: -20px;
-    margin-left: 127px;
-}
-form b:last-child{
-    margin-right: 310px;
-}
+}  
 
 
 
@@ -226,34 +218,234 @@ form b:last-child{
     border: 0;
     font-weight: bold;
     margin-bottom: 15px;
+    margin-left: 60px;
+}
+
+
+.forma_1{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-right: 80px;
+}
+.label_form{
+    font-weight: 900;
+    float: left;
+    margin-left: 75px;
+}
+
+.name_container{
+    display: flex; 
+}
+.name_container .name_left{
+    margin-right: 5px;
+    width: 200px;
+}
+.name_container .name_right{
+    width: 250px;
+}
+.email_container{
+    display: flex; 
+}
+.email_container .email_left{
+    width: 200px;
+    margin-right: 5px;
+}
+.email_container .email_right{
+    width: 250px;
+}
+.message_container {
+    display: flex; 
+}
+.message_container .message_left{
+    width: 200px;
+    margin-right: 5px;
+}
+.message_container .message_right{
+    width: 250px;
+}
+.name_container, .email_container, .message_container{
+    margin-top: 10px;
 }
 
 footer{
     text-align: center;
     background: #000;
     color: white;
-    font-size: 12px;
-    line-height: 1.8em;   
+    font-size: 10px;
+    line-height: 1,5rem;   
+}
+
+.aboutAs{
+    margin-top: 30px;
 }
 
 
-
-
-.team{
+.team, .metod2{
     background: #effffd;
+    text-align: center;
 }
 .team-img{
     text-align: center;
-    margin-bottom: 50px;
+    max-width: 100%;
+    min-height: 486px;
+    padding-bottom: 20px;
+    background-image: url('../img/team.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
-.team p{
+.team p, .metod p, .metod2 p, .metod3 p{
     text-align: justify;
-    margin-left: 25%;
-    margin-right: 10%
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 30px;
 }
 
 .tagline{
     text-align: center;
+    font-weight: 900;
+    padding-bottom: 40px;
+}
+.metod, .metod3{
+    background-color: #d3ffe8;
+}
+
+.metod-img{
+    background-image: url('../img/metod.png');
+}
+
+.yellow-line{
+    background-color: #fdc806;
+    text-align: center;
+}
+
+.yellow-line p{
+    padding: 10px 0;
+    font-weight: 900;
+}
+
+.metod-img, .metod2-img, .metod3-img{
+    text-align: center;
+    max-width: 100%;
+    min-height: 250px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.metod2-img{
+    background-image: url('../img/circle.png');
+}
+
+
+.metod3-img{
+    background-image: url('../img/logotype.png');
+}
+
+.whyhilton{
+    background-color: #effffd;
+    margin-top: 30px;
+    text-align: center;
+}
+.whyhilton p{
+    padding-top: 20px;
+}
+.whyhilton p:last-child{
+    padding-bottom: 20px;
+}
+
+.whyhilton-img, .camp-img{
+    text-align: center;
+    max-width: 100%;
+    min-height: 250px;
+    padding-bottom: 20px;
+    margin: 30px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.whyhilton-img{
+    background-image: url('../img/whyhilton.jpg');
+}
+
+.aboutsmeny{
+    background-color: #d3ffe8;
+    text-align: center;
+}
+
+.allsmeny{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.camp{
+    text-align: center;
+    background-color: #effffd;
+}
+.camp p{
+    padding-top: 30px;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.camp-img{
+    background-image: url('../img/camp.jpg');
+    padding-bottom: 77px;
+    margin-top: 30px;
+}
+
+.hiltonthis{
+    text-align: center;
+}
+
+.reviews{
+    margin-top: 30px;
+}
+
+.review1, .review3, .review5{
+    background-color: #effffd;
+    text-align: center;
+    max-width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.review2, .review4{
+    background-color: #d3ffe8;
+    text-align: center;
+    max-width: 100%;
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+.review-img1{
+    background-image: url('../img/otz.png');
+}
+
+.review-img2{
+    background-image: url('../img/otz2.jpg');
+}
+
+.review-img3{
+    background-image: url('../img/otz3.jpg');
+}
+
+.review-img4{
+    background-image: url('../img/otz4.jpg');
+}
+
+.review-img5{
+    background-image: url('../img/otz5.jpg');
 }
 
 
@@ -261,12 +453,56 @@ footer{
 
 
 
-@media screen and (max-width: 1000px){
+
+
+
+
+
+
+
+
+
+
+.page-map{
+    background-color: #effffd;
+    text-align: center;
+    margin-top: 30px;
+}
+.map{
+    padding: 35px;
+}
+.page-map p{
+    padding-top: 30px;
+}
+.tim{
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 1330px){
+.info
+{
+    flex-direction: column;
+}
+.info-img
+{
+    text-align: center;
+}
+.info-btn
+{
+    text-align: center;
+}
+}
+
+
+
+@media screen and (max-width: 1095px){
 .header{
     height: 600px;
 }
 .img-english{
     padding-top: 100px;
+    min-width: 100%;
 }
 .toggle{
     clear: both;
@@ -310,6 +546,7 @@ footer{
     width: 100%;
     opacity: 0;
     visibility: hidden;
+    margin-left: 0px;
 }
 .navigation li a{
     width: 100%;
@@ -318,15 +555,11 @@ footer{
     align-content: center;
 }
 .navigation li:last-child{
-    margin-left: 80px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 }
 
-@media screen and (max-width: 929px){
-    .message{
-        margin: 88px;
-    }
-}
 @media screen and (min-width: 320px) and (max-width: 767px){
 
 .btn1{
@@ -350,14 +583,8 @@ footer{
 }
 
 footer {
-    font-size: 11px;
+    font-size: 9px;
 }
 }
-@media screen and (max-width: 630px){
-    .message, .textar{
-        margin: 0;
-    }
-    .message{
-        text-align: center;
-    }
-}
+
+
