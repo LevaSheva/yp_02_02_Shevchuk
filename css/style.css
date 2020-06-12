@@ -301,7 +301,7 @@ footer{
     text-align: center;
     max-width: 100%;
     min-height: 486px;
-    padding-bottom: 20px;
+    padding-top: 20px;
     background-image: url('../img/team.jpg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -311,7 +311,7 @@ footer{
     text-align: justify;
     margin-right: 15%;
     margin-left: 15%;
-    margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 .tagline{
@@ -321,6 +321,16 @@ footer{
 }
 .metod, .metod3{
     background-color: #d3ffe8;
+    padding-bottom: 30px;
+}
+
+.metod2{
+    background-color: #effffd;
+    padding-bottom: 30px;
+}
+
+.metod p:first-child, .metod2 p:first-child, .metod3 p:first-child{
+    padding-top: 20px;
 }
 
 .metod-img{
@@ -340,8 +350,7 @@ footer{
 .metod-img, .metod2-img, .metod3-img{
     text-align: center;
     max-width: 100%;
-    min-height: 250px;
-    margin-bottom: 20px;
+    min-height: 300px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -372,8 +381,6 @@ footer{
     text-align: center;
     max-width: 100%;
     min-height: 250px;
-    padding-bottom: 20px;
-    margin: 30px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
