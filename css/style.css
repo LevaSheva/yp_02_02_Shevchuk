@@ -1,3 +1,5 @@
+
+/* сброс внешних и внутренних отступов для всех элементов страниц */
 *{
     padding: 0;
     margin: 0;
@@ -117,9 +119,13 @@ header{
 }
 
 
+
+
 .btn:hover, .btn1:hover, .sent:hover{
     cursor: pointer;
 }
+
+/* анимация кнопок при наведении курсора */
 
 .btn:hover, .sent:hover{
     background: #FFD700;
@@ -182,6 +188,8 @@ header{
     padding-top: 20px;
     font-weight: 900;
 }
+
+/* анимация кнопки при наведении курсора */
 
 .btn1:hover{
     box-shadow: 5px 5px 5px 5px #333333;
@@ -508,6 +516,8 @@ footer{
     text-align: center;
     margin-top: 30px;
 }
+
+/* настройка размера карты */
 iframe{
     width: 50%; 
     height: 400px; 
@@ -540,7 +550,7 @@ iframe{
     transition: all 1s;
 }
 
-
+/* медиазапросы */
 
 @media screen and (max-width: 1430px){
     .allsmeny{
